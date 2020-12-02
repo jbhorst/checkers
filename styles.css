@@ -1,0 +1,33 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#grid-container {
+  background: black;
+  display: grid;
+  height: 40rem;
+  width: 40rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 1px solid black;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-green {
+  background: green;
+  border: 1px solid green;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.player-blue {
+  background: blue;
+  border: 1px solid blue;
+  border-radius: 2rem;
+  padding: 2rem;
+}
