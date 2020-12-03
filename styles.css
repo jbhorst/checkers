@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+p {
+  font-size: 80px;
+  text-align: center;
+}
+
 #grid-container {
   background: black;
   display: grid;
