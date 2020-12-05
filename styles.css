@@ -14,25 +14,44 @@ p {
   width: 40rem;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  border: 1px solid black;
 }
 
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
 }
 
-.player-green {
-  background: green;
-  border: 1px solid green;
+.cell2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.player-red {
+  position: absolute;
+  background: red;
+  border: 2px solid pink;
   border-radius: 2rem;
   padding: 2rem;
+}
+
+.player-red:hover {
+  background: pink;
+  border: 2px solid red;
 }
 
 .player-blue {
+  position: absolute;
   background: blue;
-  border: 1px solid blue;
+  border: 2px solid lightblue;
   border-radius: 2rem;
   padding: 2rem;
+}
+
+.player-blue:hover {
+  background: lightblue;
+  border: 2px solid blue;
 }
