@@ -21,8 +21,12 @@ document.addEventListener("drop", function(event) {
 
 // function for start game //
 function start() {
+  let checkP = Math.random();
+  if(checkP > 0.5) {
     redP();
+    }else {
     blueP();
+  }
 }
 
 // grabs the p tags in the html //
@@ -30,12 +34,12 @@ const infoText = document.querySelector('p');
 
 // function for red pieces //
 const redP = function() {
-  infoText.textContent = " ";
+  infoText.textContent = "It's Red's turn";
 }
 
 // function for blue pieces //
 const blueP = function() {
-  infoText.textContent = " ";
+  infoText.textContent = "It's Blue's turn";
 }
 
 start();
