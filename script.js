@@ -1,6 +1,10 @@
 // variable for the start player //
 let startPlayer;
 
+// variable for the amount of checkers for red and blue //
+let blueCount = 12;
+let redCount = 12;
+
 // variable for the p tag in the html //
 const playerTurn = document.querySelector('p');
 
@@ -78,6 +82,19 @@ redTurn = function () {
     }
   })
 };
+
+// win Function for the game to see who won //
+win = function() {
+  if(blueCount === 0) {
+    for (let i = 0; i < bluePieces.length; i++) {
+      bluePieces.textContent = "Blue Wins";
+    }
+  } else if (redCount === 0) {
+    for (let i = 0; i < redPieces.length; i++) {
+      redPieces.textContent = "Red Wins";
+    }
+  }
+}
 
 // function that randomizes players turns at start of the game //
 function start() {
